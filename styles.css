@@ -1,59 +1,88 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
+    background: #0d0d0d;
+    color: white;
     text-align: center;
 }
 
+/* Header */
 header {
-    background: linear-gradient(90deg, #222, #444);
-    color: white;
-    padding: 50px;
+    background: linear-gradient(90deg, #ff4d4d, #ff9a9a);
+    padding: 40px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 h1 {
+    font-size: 3rem;
     margin: 0;
 }
 
-.pricing-container {
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
 }
 
-.pricing-card {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: left;
+nav ul li {
+    display: inline;
 }
 
-.premium {
-    border: 2px solid #007bff;
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background 0.3s ease;
+    border-radius: 5px;
 }
 
+nav ul li a:hover {
+    color: #fff;
+    background: rgba(255, 77, 77, 0.4);
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    border-bottom: 2px solid #333;
+}
+
+/* Music Section */
+iframe {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Events List */
 ul {
-    list-style: none;
     padding: 0;
 }
 
-.cta {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
+ul li {
+    list-style: none;
+    padding: 10px;
+    background: rgba(255, 77, 77, 0.2);
+    margin: 10px auto;
+    width: fit-content;
     border-radius: 5px;
-    font-weight: bold;
+    transition: background 0.3s ease-in-out;
 }
 
+ul li:hover {
+    background: rgba(255, 77, 77, 0.4);
+}
+
+/* Footer */
 footer {
-    background-color: #222;
-    color: white;
+    background: #111;
     padding: 20px;
+    font-size: 0.9rem;
 }
